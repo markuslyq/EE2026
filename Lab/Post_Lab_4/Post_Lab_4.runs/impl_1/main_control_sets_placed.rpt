@@ -1,0 +1,77 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Mon Oct 12 03:46:18 2020
+| Host         : DESKTOP-JBI4V78 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
+| Design       : main
+| Device       : xa7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    12 |
+| Unused register locations in slices containing registers |    16 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      8 |            3 |
+|    16+ |            9 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              94 |           18 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              22 |            6 |
+| Yes          | No                    | No                     |             176 |           34 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              36 |            7 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------+-----------------------+-----------------------------+------------------+----------------+
+|     Clock Signal    |     Enable Signal     |       Set/Reset Signal      | Slice Load Count | Bel Load Count |
++---------------------+-----------------------+-----------------------------+------------------+----------------+
+|  Q_reg_i_1_n_0      | AN[3]_i_1_n_0         |                             |                3 |              8 |
+|  Q_reg_i_1_n_0      | total_person_count    |                             |                3 |              8 |
+|  desired_clock_BUFG |                       |                             |                2 |              8 |
+|  Q_reg_i_1_n_0      | display[7]_i_1_n_0    |                             |                4 |             16 |
+|  desired_clock_BUFG | led_decrement_counter |                             |                4 |             18 |
+|  Q_reg_i_1_n_0      |                       | UP/ff2/error_reg            |                6 |             22 |
+|  desired_clock_BUFG | counter               |                             |                6 |             30 |
+|  Q_reg_i_1_n_0      |                       |                             |                9 |             32 |
+|  desired_clock_BUFG | led__0                |                             |                6 |             32 |
+|  Q_reg_i_1_n_0      | led_decrement_counter | UP/ff1/error_counter_reg[0] |                7 |             36 |
+|  CLOCK_IBUF_BUFG    |                       |                             |                7 |             54 |
+|  Q_reg_i_1_n_0      | UP/ff1/UpButton       |                             |                8 |             64 |
++---------------------+-----------------------+-----------------------------+------------------+----------------+
+
+

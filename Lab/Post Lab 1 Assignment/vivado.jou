@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Sep  9 21:47:56 2020
+# Process ID: 9512
+# Current directory: C:/Users/marku/Documents/EE2026/Lab/Post Lab 1 Assignment
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14908 C:\Users\marku\Documents\EE2026\Lab\Post Lab 1 Assignment\Post Lab 1 Assignment.xpr
+# Log file: C:/Users/marku/Documents/EE2026/Lab/Post Lab 1 Assignment/vivado.log
+# Journal file: C:/Users/marku/Documents/EE2026/Lab/Post Lab 1 Assignment\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/marku/Documents/EE2026/Lab/Post Lab 1 Assignment/Post Lab 1 Assignment.xpr}
+update_compile_order -fileset sources_1

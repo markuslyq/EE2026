@@ -1,0 +1,391 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat Sep 19 17:47:48 2020
+# Process ID: 5708
+# Current directory: C:/Users/marku/Documents/EE2026/Lab/lab3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3496 C:\Users\marku\Documents\EE2026\Lab\lab3\lab3.xpr
+# Log file: C:/Users/marku/Documents/EE2026/Lab/lab3/vivado.log
+# Journal file: C:/Users/marku/Documents/EE2026/Lab/lab3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Users/marku/Documents/Vivado/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:17 . Memory (MB): peak = 838.887 ; gain = 84.605
+update_compile_order -fileset sources_1
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Sep 19 18:05:26 2020] Launched impl_1...
+Run output will be captured here: C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 880.137 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA0D1DA
+open_hw_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1542.051 ; gain = 661.914
+set_property PROGRAM.FILE {C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.runs/impl_1/slow_blinking_led.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.runs/impl_1/slow_blinking_led.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Sep 19 18:09:05 2020] Launched impl_1...
+Run output will be captured here: C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.runs/impl_1/slow_blinking_led.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'blinking_led_simulation' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj blinking_led_simulation_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.srcs/sources_1/new/blinking_led.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module slow_blinking_led
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.srcs/sim_1/new/blinking_led_simulation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blinking_led_simulation
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/marku/Documents/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto dafc270622f84593a10a4288feeb0142 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot blinking_led_simulation_behav xil_defaultlib.blinking_led_simulation xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.slow_blinking_led
+Compiling module xil_defaultlib.blinking_led_simulation
+Compiling module xil_defaultlib.glbl
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Built simulation snapshot blinking_led_simulation_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 1549.918 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'elaborate' step aborted
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1549.918 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'blinking_led_simulation' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj blinking_led_simulation_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.srcs/sources_1/new/blinking_led.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module slow_blinking_led
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.srcs/sim_1/new/blinking_led_simulation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module blinking_led_simulation
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/marku/Documents/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto dafc270622f84593a10a4288feeb0142 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot blinking_led_simulation_behav xil_defaultlib.blinking_led_simulation xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.slow_blinking_led
+Compiling module xil_defaultlib.blinking_led_simulation
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot blinking_led_simulation_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "blinking_led_simulation_behav -key {Behavioral:sim_1:Functional:blinking_led_simulation} -tclbatch {blinking_led_simulation.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source blinking_led_simulation.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'blinking_led_simulation_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 1566.477 ; gain = 15.980
+current_wave_config {Untitled 1}
+Untitled 1
+add_wave {{/blinking_led_simulation/sim/fast_COUNT}} {{/blinking_led_simulation/sim/fast_COUNT[3]}} {{/blinking_led_simulation/sim/fast_COUNT[2]}} {{/blinking_led_simulation/sim/fast_COUNT[1]}} {{/blinking_led_simulation/sim/fast_COUNT[0]}} {{/blinking_led_simulation/sim/slow_COUNT}} {{/blinking_led_simulation/sim/COUNT}} 
+remove_forces { {/blinking_led_simulation/sim/fast_COUNT[3]} {/blinking_led_simulation/sim/fast_COUNT[2]} {/blinking_led_simulation/sim/fast_COUNT[1]} {/blinking_led_simulation/sim/fast_COUNT[0]} }
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+run: Time (s): cpu = 00:00:18 ; elapsed = 00:00:11 . Memory (MB): peak = 1572.367 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 1575.422 ; gain = 0.000
+close [ open C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.srcs/sources_1/new/faster_blinking_led.v w ]
+add_files C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.srcs/sources_1/new/faster_blinking_led.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.srcs/sources_1/new/alternating_blinking_led.v w ]
+add_files C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.srcs/sources_1/new/alternating_blinking_led.v
+update_compile_order -fileset sources_1
+set_property needs_refresh false [get_runs synth_1]
+set_property needs_refresh false [get_runs impl_1]
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+[Sat Sep 19 18:46:09 2020] Launched impl_1...
+Run output will be captured here: C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Sep 19 18:48:39 2020] Launched synth_1...
+Run output will be captured here: C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.runs/synth_1/runme.log
+[Sat Sep 19 18:48:39 2020] Launched impl_1...
+Run output will be captured here: C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.runs/impl_1/runme.log
+set_property top alternating_blinking_led [current_fileset]
+update_compile_order -fileset sources_1
+open_run impl_1
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 1612.379 ; gain = 31.859
+INFO: [Common 17-344] 'open_run' was cancelled
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: alternating_blinking_led
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1724.645 ; gain = 112.266
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'alternating_blinking_led' [C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.srcs/sources_1/new/alternating_blinking_led.v:23]
+ERROR: [Synth 8-660] unable to resolve 'faster_blinking_led' [C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.srcs/sources_1/new/alternating_blinking_led.v:25]
+ERROR: [Synth 8-6156] failed synthesizing module 'alternating_blinking_led' [C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.srcs/sources_1/new/alternating_blinking_led.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1762.570 ; gain = 150.191
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+1 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: alternating_blinking_led
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1781.254 ; gain = 0.078
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'alternating_blinking_led' [C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.srcs/sources_1/new/alternating_blinking_led.v:23]
+INFO: [Synth 8-6157] synthesizing module 'faster_blinking_led' [C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.srcs/sources_1/new/faster_blinking_led.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'faster_blinking_led' (1#1) [C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.srcs/sources_1/new/faster_blinking_led.v:23]
+INFO: [Synth 8-6157] synthesizing module 'slow_blinking_led' [C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.srcs/sources_1/new/blinking_led.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'slow_blinking_led' (2#1) [C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.srcs/sources_1/new/blinking_led.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'alternating_blinking_led' (3#1) [C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.srcs/sources_1/new/alternating_blinking_led.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1790.348 ; gain = 9.172
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1790.348 ; gain = 9.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1790.348 ; gain = 9.172
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.srcs/constrs_1/new/basys3_constraints.xdc]
+Finished Parsing XDC File [C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.srcs/constrs_1/new/basys3_constraints.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:36 ; elapsed = 00:00:25 . Memory (MB): peak = 2057.688 ; gain = 276.512
+10 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:25 . Memory (MB): peak = 2057.688 ; gain = 276.711
+close_design
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: alternating_blinking_led
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2058.770 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'alternating_blinking_led' [C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.srcs/sources_1/new/alternating_blinking_led.v:23]
+INFO: [Synth 8-6157] synthesizing module 'faster_blinking_led' [C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.srcs/sources_1/new/faster_blinking_led.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'faster_blinking_led' (1#1) [C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.srcs/sources_1/new/faster_blinking_led.v:23]
+INFO: [Synth 8-6157] synthesizing module 'slow_blinking_led' [C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.srcs/sources_1/new/blinking_led.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'slow_blinking_led' (2#1) [C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.srcs/sources_1/new/blinking_led.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'alternating_blinking_led' (3#1) [C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.srcs/sources_1/new/alternating_blinking_led.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2058.770 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2058.770 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2058.770 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.srcs/constrs_1/new/basys3_constraints.xdc]
+Finished Parsing XDC File [C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.srcs/constrs_1/new/basys3_constraints.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 2103.801 ; gain = 45.031
+9 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 2103.801 ; gain = 45.031
+close_design
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+[Sat Sep 19 19:05:23 2020] Launched synth_1...
+Run output will be captured here: C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.runs/synth_1/runme.log
+[Sat Sep 19 19:05:23 2020] Launched impl_1...
+Run output will be captured here: C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sat Sep 19 19:09:18 2020] Launched impl_1...
+Run output will be captured here: C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2103.801 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA0D1DA
+set_property PROGRAM.FILE {C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.runs/impl_1/alternating_blinking_led.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/marku/Documents/EE2026/Lab/lab3/lab3.runs/impl_1/alternating_blinking_led.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+create_project post_lab3 C:/Users/marku/Documents/EE2026/Lab/post_lab3 -part xa7a35tcpg236-1I
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Users/marku/Documents/Vivado/Vivado/2018.2/data/ip'.
+create_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 2103.801 ; gain = 0.000
+file mkdir C:/Users/marku/Documents/EE2026/Lab/post_lab3/post_lab3.srcs/sources_1/new
+close [ open C:/Users/marku/Documents/EE2026/Lab/post_lab3/post_lab3.srcs/sources_1/new/post_lab_3.v w ]
+add_files C:/Users/marku/Documents/EE2026/Lab/post_lab3/post_lab3.srcs/sources_1/new/post_lab_3.v
+update_compile_order -fileset sources_1
+close [ open C:/Users/marku/Documents/EE2026/Lab/post_lab3/post_lab3.srcs/sources_1/new/1.5Hz_clock_generator w ]
+add_files C:/Users/marku/Documents/EE2026/Lab/post_lab3/post_lab3.srcs/sources_1/new/1.5Hz_clock_generator
+set_property file_type Verilog [get_files  C:/Users/marku/Documents/EE2026/Lab/post_lab3/post_lab3.srcs/sources_1/new/1.5Hz_clock_generator]
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/marku/Documents/EE2026/Lab/post_lab3/post_lab3.srcs/sources_1/new/1.5Hz_clock_generator] -no_script -reset -force -quiet
+remove_files  C:/Users/marku/Documents/EE2026/Lab/post_lab3/post_lab3.srcs/sources_1/new/1.5Hz_clock_generator
+remove_files  C:/Users/marku/Documents/EE2026/Lab/post_lab3/post_lab3.srcs/sources_1/new/1.5Hz_clock_generator
+WARNING: [Vivado 12-818] No files matched 'C:/Users/marku/Documents/EE2026/Lab/post_lab3/post_lab3.srcs/sources_1/new/1.5Hz_clock_generator'
+close [ open C:/Users/marku/Documents/EE2026/Lab/post_lab3/post_lab3.srcs/sources_1/new/sub_task_1_clock.v w ]
+add_files C:/Users/marku/Documents/EE2026/Lab/post_lab3/post_lab3.srcs/sources_1/new/sub_task_1_clock.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1

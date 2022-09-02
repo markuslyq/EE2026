@@ -1,0 +1,327 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri Aug 28 13:02:07 2020
+# Process ID: 11968
+# Current directory: C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8644 C:\Users\marku\Documents\EE2026\Post Lab 1 Assignment\Post Lab 1 Assignment.xpr
+# Log file: C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/vivado.log
+# Journal file: C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/Post Lab 1 Assignment.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Users/marku/Documents/Vivado/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:17 . Memory (MB): peak = 813.582 ; gain = 59.977
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 865.539 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA0D1DA
+open_hw_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1488.156 ; gain = 622.617
+set_property PROGRAM.FILE {C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/Post Lab 1 Assignment.runs/impl_1/Matriculation_Number_Display.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/Post Lab 1 Assignment.runs/impl_1/Matriculation_Number_Display.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: Matriculation_Number_Display
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1631.215 ; gain = 84.434
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Matriculation_Number_Display' [C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/Post Lab 1 Assignment.srcs/sources_1/new/Matriculation_Number_Display.v:23]
+WARNING: [Synth 8-3848] Net AN0 in module/entity Matriculation_Number_Display does not have driver. [C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/Post Lab 1 Assignment.srcs/sources_1/new/Matriculation_Number_Display.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Matriculation_Number_Display' (1#1) [C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/Post Lab 1 Assignment.srcs/sources_1/new/Matriculation_Number_Display.v:23]
+WARNING: [Synth 8-3331] design Matriculation_Number_Display has unconnected port AN0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1669.828 ; gain = 123.047
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1671.152 ; gain = 124.371
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1671.152 ; gain = 124.371
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/Post Lab 1 Assignment.srcs/constrs_1/new/my_basys3_constaints.xdc]
+Finished Parsing XDC File [C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/Post Lab 1 Assignment.srcs/constrs_1/new/my_basys3_constaints.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:51 ; elapsed = 00:00:42 . Memory (MB): peak = 1997.754 ; gain = 450.973
+6 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:42 . Memory (MB): peak = 1997.754 ; gain = 450.973
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/Post Lab 1 Assignment.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Matriculation_Number_Display_Simulation' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/Post Lab 1 Assignment.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Matriculation_Number_Display_Simulation_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/Post Lab 1 Assignment.srcs/sources_1/new/Matriculation_Number_Display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Matriculation_Number_Display
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/Post Lab 1 Assignment.srcs/sim_1/new/Matriculation_Number_Display_Simulation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Matriculation_Number_Display_Simulation
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/Post Lab 1 Assignment.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/marku/Documents/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 63aab46d097745b499043b8c39918d10 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Matriculation_Number_Display_Simulation_behav xil_defaultlib.Matriculation_Number_Display_Simulation xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Matriculation_Number_Display
+Compiling module xil_defaultlib.Matriculation_Number_Display_Sim...
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Matriculation_Number_Display_Simulation_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2005.227 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/Post Lab 1 Assignment.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Matriculation_Number_Display_Simulation_behav -key {Behavioral:sim_1:Functional:Matriculation_Number_Display_Simulation} -tclbatch {Matriculation_Number_Display_Simulation.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Matriculation_Number_Display_Simulation.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:14 ; elapsed = 00:00:05 . Memory (MB): peak = 2013.559 ; gain = 8.332
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Matriculation_Number_Display_Simulation_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2013.559 ; gain = 8.332
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+refresh_design
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'refresh_design' was cancelled
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7a35tcpg236-1
+Top: Matriculation_Number_Display
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2018.539 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Matriculation_Number_Display' [C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/Post Lab 1 Assignment.srcs/sources_1/new/Matriculation_Number_Display.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Matriculation_Number_Display' (1#1) [C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/Post Lab 1 Assignment.srcs/sources_1/new/Matriculation_Number_Display.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2018.539 ; gain = 0.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2018.539 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 2018.539 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/Post Lab 1 Assignment.srcs/constrs_1/new/my_basys3_constaints.xdc]
+Finished Parsing XDC File [C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/Post Lab 1 Assignment.srcs/constrs_1/new/my_basys3_constaints.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 2043.297 ; gain = 24.758
+5 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 2043.297 ; gain = 24.758
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/Post Lab 1 Assignment.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Matriculation_Number_Display_Simulation' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/Post Lab 1 Assignment.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj Matriculation_Number_Display_Simulation_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/Post Lab 1 Assignment.srcs/sources_1/new/Matriculation_Number_Display.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Matriculation_Number_Display
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/Post Lab 1 Assignment.srcs/sim_1/new/Matriculation_Number_Display_Simulation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Matriculation_Number_Display_Simulation
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/Post Lab 1 Assignment.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/marku/Documents/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 63aab46d097745b499043b8c39918d10 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Matriculation_Number_Display_Simulation_behav xil_defaultlib.Matriculation_Number_Display_Simulation xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Matriculation_Number_Display
+Compiling module xil_defaultlib.Matriculation_Number_Display_Sim...
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Matriculation_Number_Display_Simulation_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/Post Lab 1 Assignment.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Matriculation_Number_Display_Simulation_behav -key {Behavioral:sim_1:Functional:Matriculation_Number_Display_Simulation} -tclbatch {Matriculation_Number_Display_Simulation.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Matriculation_Number_Display_Simulation.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Matriculation_Number_Display_Simulation_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 2043.297 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+[Fri Aug 28 14:24:08 2020] Launched synth_1...
+Run output will be captured here: C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/Post Lab 1 Assignment.runs/synth_1/runme.log
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcpg236-1
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/Post Lab 1 Assignment.srcs/constrs_1/new/my_basys3_constaints.xdc]
+Finished Parsing XDC File [C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/Post Lab 1 Assignment.srcs/constrs_1/new/my_basys3_constaints.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2161.645 ; gain = 118.348
+launch_runs impl_1 -jobs 4
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.103 . Memory (MB): peak = 2602.230 ; gain = 0.000
+[Fri Aug 28 14:27:28 2020] Launched impl_1...
+Run output will be captured here: C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/Post Lab 1 Assignment.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Aug 28 14:30:09 2020] Launched impl_1...
+Run output will be captured here: C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/Post Lab 1 Assignment.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2606.234 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA0D1DA
+set_property PROGRAM.FILE {C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/Post Lab 1 Assignment.runs/impl_1/Matriculation_Number_Display.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/Post Lab 1 Assignment.runs/impl_1/Matriculation_Number_Display.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw

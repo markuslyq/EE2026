@@ -1,0 +1,7 @@
+Running: xsim.dir/blinking_led_simulation_behav/xsimk.exe -simmode gui -wdb blinking_led_simulation_behav.wdb -simrunnum 0 -socket 53810
+Design successfully loaded
+Design Loading Memory Usage: 5684 KB (Peak: 5684 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 14448 KB (Peak: 14448 KB)
+Simulation CPU Usage: 1781 ms

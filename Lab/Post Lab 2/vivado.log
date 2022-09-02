@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Aug 29 21:54:58 2022
+# Process ID: 4336
+# Current directory: C:/Users/marku/Documents/EE2026/Lab/Post Lab 2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14896 C:\Users\marku\Documents\EE2026\Lab\Post Lab 2\Post Lab 2.xpr
+# Log file: C:/Users/marku/Documents/EE2026/Lab/Post Lab 2/vivado.log
+# Journal file: C:/Users/marku/Documents/EE2026/Lab/Post Lab 2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/marku/Documents/EE2026/Lab/Post Lab 2/Post Lab 2.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:12 . Memory (MB): peak = 800.242 ; gain = 64.516
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 29 21:56:34 2022...

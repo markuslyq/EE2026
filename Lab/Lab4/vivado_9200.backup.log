@@ -1,0 +1,235 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Sep 30 16:46:09 2020
+# Process ID: 9200
+# Current directory: C:/Users/marku/Documents/EE2026/Lab/Lab4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1728 C:\Users\marku\Documents\EE2026\Lab\Lab4\Lab4.xpr
+# Log file: C:/Users/marku/Documents/EE2026/Lab/Lab4/vivado.log
+# Journal file: C:/Users/marku/Documents/EE2026/Lab/Lab4\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/marku/Documents/EE2026/Lab/Lab4/Lab4.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Users/marku/Documents/Vivado/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:17 . Memory (MB): peak = 822.230 ; gain = 67.734
+update_compile_order -fileset sources_1
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xa7a35tcpg236-1I
+Top: single_pulse_output
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 957.324 ; gain = 109.855
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'single_pulse_output' [C:/Users/marku/Documents/EE2026/Lab/Lab4/Lab4.srcs/sources_1/new/single_pulse_output.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/marku/Documents/EE2026/Lab/Lab4/Lab4.srcs/sources_1/new/clock_divider.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (1#1) [C:/Users/marku/Documents/EE2026/Lab/Lab4/Lab4.srcs/sources_1/new/clock_divider.v:23]
+INFO: [Synth 8-6157] synthesizing module 'my_dff' [C:/Users/marku/Documents/EE2026/Lab/Lab4/Lab4.srcs/sources_1/new/my_dff.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'my_dff' (2#1) [C:/Users/marku/Documents/EE2026/Lab/Lab4/Lab4.srcs/sources_1/new/my_dff.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'single_pulse_output' (3#1) [C:/Users/marku/Documents/EE2026/Lab/Lab4/Lab4.srcs/sources_1/new/single_pulse_output.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1000.328 ; gain = 152.859
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1000.328 ; gain = 152.859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1000.328 ; gain = 152.859
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xa7a35tcpg236-1I
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/marku/Documents/EE2026/Lab/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/marku/Documents/EE2026/Lab/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:48 ; elapsed = 00:00:37 . Memory (MB): peak = 1325.594 ; gain = 478.125
+10 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:37 . Memory (MB): peak = 1325.594 ; gain = 478.125
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1366.738 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'single_pulse_output' [C:/Users/marku/Documents/EE2026/Lab/Lab4/Lab4.srcs/sources_1/new/single_pulse_output.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/marku/Documents/EE2026/Lab/Lab4/Lab4.srcs/sources_1/new/clock_divider.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (1#1) [C:/Users/marku/Documents/EE2026/Lab/Lab4/Lab4.srcs/sources_1/new/clock_divider.v:23]
+INFO: [Synth 8-6157] synthesizing module 'my_dff' [C:/Users/marku/Documents/EE2026/Lab/Lab4/Lab4.srcs/sources_1/new/my_dff.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'my_dff' (2#1) [C:/Users/marku/Documents/EE2026/Lab/Lab4/Lab4.srcs/sources_1/new/my_dff.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'single_pulse_output' (3#1) [C:/Users/marku/Documents/EE2026/Lab/Lab4/Lab4.srcs/sources_1/new/single_pulse_output.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1381.914 ; gain = 15.176
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1381.914 ; gain = 15.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1381.914 ; gain = 15.176
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/marku/Documents/EE2026/Lab/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/marku/Documents/EE2026/Lab/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:22 . Memory (MB): peak = 1381.914 ; gain = 15.176
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Sep 30 17:59:00 2020] Launched synth_1...
+Run output will be captured here: C:/Users/marku/Documents/EE2026/Lab/Lab4/Lab4.runs/synth_1/runme.log
+[Wed Sep 30 17:59:00 2020] Launched impl_1...
+Run output will be captured here: C:/Users/marku/Documents/EE2026/Lab/Lab4/Lab4.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1381.914 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA0D1DA
+open_hw_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1987.223 ; gain = 605.309
+set_property PROGRAM.FILE {C:/Users/marku/Documents/EE2026/Lab/Lab4/Lab4.runs/impl_1/single_pulse_output.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/marku/Documents/EE2026/Lab/Lab4/Lab4.runs/impl_1/single_pulse_output.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+refresh_design
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 2034.934 ; gain = 41.211
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'single_pulse_output' [C:/Users/marku/Documents/EE2026/Lab/Lab4/Lab4.srcs/sources_1/new/single_pulse_output.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_divider' [C:/Users/marku/Documents/EE2026/Lab/Lab4/Lab4.srcs/sources_1/new/clock_divider.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'clock_divider' (1#1) [C:/Users/marku/Documents/EE2026/Lab/Lab4/Lab4.srcs/sources_1/new/clock_divider.v:23]
+INFO: [Synth 8-6157] synthesizing module 'my_dff' [C:/Users/marku/Documents/EE2026/Lab/Lab4/Lab4.srcs/sources_1/new/my_dff.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'my_dff' (2#1) [C:/Users/marku/Documents/EE2026/Lab/Lab4/Lab4.srcs/sources_1/new/my_dff.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'single_pulse_output' (3#1) [C:/Users/marku/Documents/EE2026/Lab/Lab4/Lab4.srcs/sources_1/new/single_pulse_output.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 2071.246 ; gain = 77.523
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 2071.246 ; gain = 77.523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 2071.246 ; gain = 77.523
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/marku/Documents/EE2026/Lab/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/marku/Documents/EE2026/Lab/Basys3_Master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:21 . Memory (MB): peak = 2092.117 ; gain = 98.395
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Wed Sep 30 19:26:36 2020] Launched synth_1...
+Run output will be captured here: C:/Users/marku/Documents/EE2026/Lab/Lab4/Lab4.runs/synth_1/runme.log
+[Wed Sep 30 19:26:37 2020] Launched impl_1...
+Run output will be captured here: C:/Users/marku/Documents/EE2026/Lab/Lab4/Lab4.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.2
+  **** Build date : Jun 14 2018-20:42:52
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 2092.117 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA0D1DA
+set_property PROGRAM.FILE {C:/Users/marku/Documents/EE2026/Lab/Lab4/Lab4.runs/impl_1/single_pulse_output.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/marku/Documents/EE2026/Lab/Lab4/Lab4.runs/impl_1/single_pulse_output.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+close_hw
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Oct  1 02:05:59 2020...

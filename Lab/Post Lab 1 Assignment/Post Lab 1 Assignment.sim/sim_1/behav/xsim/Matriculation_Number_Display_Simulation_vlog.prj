@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Post Lab 1 Assignment.srcs/sources_1/new/Matriculation_Number_Display.v" \
+"../../../../Post Lab 1 Assignment.srcs/sim_1/new/Matriculation_Number_Display_Simulation.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

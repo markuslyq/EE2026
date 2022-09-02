@@ -1,0 +1,92 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Sep  9 15:18:56 2020
+# Process ID: 1436
+# Current directory: C:/Users/marku/Documents/EE2026/Lab/Lab 2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9300 C:\Users\marku\Documents\EE2026\Lab\Lab 2\Lab 2.xpr
+# Log file: C:/Users/marku/Documents/EE2026/Lab/Lab 2/vivado.log
+# Journal file: C:/Users/marku/Documents/EE2026/Lab/Lab 2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/marku/Documents/EE2026/Lab/Lab 2/Lab 2.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/marku/Downloads/Lab 2' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Users/marku/Documents/Vivado/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:29 ; elapsed = 00:00:17 . Memory (MB): peak = 807.605 ; gain = 68.199
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/marku/Documents/EE2026/Lab/Lab 2/Lab 2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'four_bit_adder_simulation' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/marku/Documents/EE2026/Lab/Lab 2/Lab 2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj four_bit_adder_simulation_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marku/Documents/EE2026/Lab/Lab 2/Lab 2.srcs/sources_1/new/Bit_Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module one_bit_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marku/Documents/EE2026/Lab/Lab 2/Lab 2.srcs/sources_1/new/four_bit_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four_bit_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marku/Documents/EE2026/Lab/Lab 2/Lab 2.srcs/sim_1/new/four_bit_adder_simulation.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module four_bit_adder_simulation
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/marku/Documents/EE2026/Lab/Lab 2/Lab 2.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/marku/Documents/EE2026/Lab/Lab 2/Lab 2.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/marku/Documents/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto e6c9af9fca0042cd85bcb46348a7d898 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot four_bit_adder_simulation_behav xil_defaultlib.four_bit_adder_simulation xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.one_bit_adder
+Compiling module xil_defaultlib.four_bit_adder
+Compiling module xil_defaultlib.four_bit_adder_simulation
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot four_bit_adder_simulation_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/marku/Documents/EE2026/Lab/Lab -notrace
+couldn't read file "C:/Users/marku/Documents/EE2026/Lab/Lab": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Wed Sep  9 15:34:45 2020...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 839.652 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/marku/Documents/EE2026/Lab/Lab 2/Lab 2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "four_bit_adder_simulation_behav -key {Behavioral:sim_1:Functional:four_bit_adder_simulation} -tclbatch {four_bit_adder_simulation.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source four_bit_adder_simulation.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'four_bit_adder_simulation_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:16 ; elapsed = 00:00:15 . Memory (MB): peak = 855.375 ; gain = 15.723
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 862.336 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Sep  9 21:47:45 2020...

@@ -1,0 +1,111 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Wed Oct 28 03:01:52 2020
+| Host         : DESKTOP-JBI4V78 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_Student_control_sets_placed.rpt
+| Design       : Top_Student
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    41 |
+| Unused register locations in slices containing registers |   154 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |           17 |
+|      4 |            1 |
+|      8 |            1 |
+|     10 |            2 |
+|     12 |            2 |
+|     14 |            1 |
+|    16+ |           17 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             128 |           28 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             254 |           41 |
+| Yes          | No                    | No                     |              46 |            9 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             298 |           51 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------+-------------------------------+-------------------------------------+------------------+----------------+
+|           Clock Signal           |         Enable Signal         |           Set/Reset Signal          | Slice Load Count | Bel Load Count |
++----------------------------------+-------------------------------+-------------------------------------+------------------+----------------+
+|  J_MIC3_Pin1_OBUF_BUFG           | led[14]_i_2_n_0               | led[14]_i_1_n_0                     |                1 |              2 |
+|  J_MIC3_Pin1_OBUF_BUFG           | led[11]_i_2_n_0               | led[11]_i_1_n_0                     |                1 |              2 |
+|  J_MIC3_Pin1_OBUF_BUFG           | led[1]_i_2_n_0                | led[1]_i_1_n_0                      |                1 |              2 |
+|  J_MIC3_Pin1_OBUF_BUFG           | led[15]_i_2_n_0               | led[15]_i_1_n_0                     |                1 |              2 |
+|  J_MIC3_Pin1_OBUF_BUFG           | led[4]_i_2_n_0                | led[4]_i_1_n_0                      |                1 |              2 |
+|  J_MIC3_Pin1_OBUF_BUFG           | led[13]_i_2_n_0               | led[13]_i_1_n_0                     |                1 |              2 |
+|  J_MIC3_Pin1_OBUF_BUFG           | led[2]_i_2_n_0                | led[2]_i_1_n_0                      |                1 |              2 |
+|  J_MIC3_Pin1_OBUF_BUFG           | led[9]_i_2_n_0                | led[9]_i_1_n_0                      |                1 |              2 |
+|  J_MIC3_Pin1_OBUF_BUFG           | led[10]_i_2_n_0               | led[10]_i_1_n_0                     |                1 |              2 |
+|  J_MIC3_Pin1_OBUF_BUFG           | led[12]_i_2_n_0               | led[12]_i_1_n_0                     |                1 |              2 |
+|  J_MIC3_Pin1_OBUF_BUFG           | led[6]_i_2_n_0                | led[6]_i_1_n_0                      |                1 |              2 |
+|  J_MIC3_Pin1_OBUF_BUFG           | led[7]_i_2_n_0                | led[7]_i_1_n_0                      |                1 |              2 |
+|  J_MIC3_Pin1_OBUF_BUFG           | led[5]_i_2_n_0                | led[5]_i_1_n_0                      |                1 |              2 |
+|  J_MIC3_Pin1_OBUF_BUFG           | led[3]_i_2_n_0                | led[3]_i_1_n_0                      |                1 |              2 |
+|  J_MIC3_Pin1_OBUF_BUFG           | led[8]_i_2_n_0                | led[8]_i_1_n_0                      |                1 |              2 |
+|  J_MIC3_Pin1_OBUF_BUFG           | led[0]_i_2_n_0                | led[0]_i_1_n_0                      |                1 |              2 |
+| ~clk6p25m_BUFG                   |                               |                                     |                1 |              2 |
+|  CLK50KHZ/debounce_clk           |                               |                                     |                1 |              4 |
+|  clk6p25m_BUFG                   |                               | display/oled_data_reg[0][0]         |                4 |              8 |
+|  CLK762HZ/CLK                    |                               |                                     |                3 |             10 |
+|  J_MIC3_Pin1_OBUF_BUFG           | led_count                     |                                     |                2 |             10 |
+|  clk6p25m_BUFG                   |                               | display/oled_data_reg[11]_2         |                5 |             12 |
+|  clk6p25m_BUFG                   | virus_counter[6]_i_2_n_0      | virus_counter[6]_i_1_n_0            |                3 |             12 |
+|  clk6p25m_BUFG                   | laser_end0_out                |                                     |                2 |             14 |
+|  CLK762HZ/CLK                    | seg0                          | seg[7]_i_1_n_0                      |                1 |             16 |
+|  CLK100MHZ_IBUF_BUFG             |                               | sample_clock/counter[11]_i_1__0_n_0 |                3 |             22 |
+|  clk6p25m_BUFG                   | outer_laser_colour[7]_i_1_n_0 |                                     |                5 |             22 |
+|  J_MIC3_Pin1_OBUF_BUFG           |                               |                                     |                2 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG           | counter[11]_i_2_n_0           | led_count                           |                4 |             24 |
+| ~nolabel_line63/J_MIC3_Pin4_OBUF |                               |                                     |                4 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG           | max[11]_i_2_n_0               | max                                 |                2 |             24 |
+|  CLK100MHZ_IBUF_BUFG             |                               | J_MIC3_Pin1_OBUF_BUFG               |                3 |             24 |
+|  clk6p25m_BUFG                   |                               |                                     |                8 |             26 |
+| ~clk6p25m_BUFG                   |                               | CENTRE/ff1/CentreButton             |                4 |             34 |
+|  CLK100MHZ_IBUF_BUFG             |                               |                                     |                9 |             38 |
+|  clk6p25m_BUFG                   | sw_IBUF[12]                   | p_4_in                              |                5 |             38 |
+| ~clk6p25m_BUFG                   | display/delay[0]_i_1_n_0      | CENTRE/ff1/CentreButton             |                5 |             40 |
+|  clk6p25m_BUFG                   | dead_reg_n_0                  | p_4_in                              |                6 |             48 |
+|  CLK100MHZ_IBUF_BUFG             |                               | CLK762HZ/clear                      |                8 |             64 |
+| ~clk6p25m_BUFG                   | display/state                 | CENTRE/ff1/CentreButton             |                9 |             64 |
+| ~clk6p25m_BUFG                   |                               | display/spi_word[39]_i_1_n_0        |               14 |             90 |
++----------------------------------+-------------------------------+-------------------------------------+------------------+----------------+
+
+

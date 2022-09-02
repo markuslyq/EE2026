@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xa7a35tcpg236-1I" LaunchTime="1600593683">
+  <File Type="PA-TCL" Name="Post_Lab_3_Assignment.tcl"/>
+  <File Type="REPORTS-TCL" Name="Post_Lab_3_Assignment_reports.tcl"/>
+  <File Type="RDS-RDS" Name="Post_Lab_3_Assignment.vds"/>
+  <File Type="RDS-UTIL" Name="Post_Lab_3_Assignment_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="Post_Lab_3_Assignment_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="Post_Lab_3_Assignment.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/sub_task_2_F_Blink.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Post_Lab_3_Assignment/Post_Lab_3_Assignment.srcs/sources_1/new/sub_task_2_F_Blink.v"/>
+        <Attr Name="ImportTime" Val="1600541164"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Post_Lab_3_Assignment.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Post_Lab_3_Assignment/Post_Lab_3_Assignment.srcs/sources_1/new/Post_Lab_3_Assignment.v"/>
+        <Attr Name="ImportTime" Val="1600593660"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Post_Lab_3_Assignment"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Lab/Basys3_Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../Basys3_Master.xdc"/>
+        <Attr Name="ImportTime" Val="1600544776"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

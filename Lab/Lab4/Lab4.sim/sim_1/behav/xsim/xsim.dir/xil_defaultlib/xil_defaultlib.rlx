@@ -1,0 +1,8 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+C:/Users/marku/Documents/EE2026/Lab/Lab4/Lab4.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+C:/Users/marku/Documents/EE2026/Lab/Lab4/Lab4.srcs/sim_1/new/single_pulse_output_sim.v,1601430825,verilog,,,,single_pulse_output_sim,,,,,,,,
+C:/Users/marku/Documents/EE2026/Lab/Lab4/Lab4.srcs/sources_1/new/my_dff.v,1601429453,verilog,,C:/Users/marku/Documents/EE2026/Lab/Lab4/Lab4.srcs/sources_1/new/single_pulse_output.v,,my_dff,,,,,,,,
+C:/Users/marku/Documents/EE2026/Lab/Lab4/Lab4.srcs/sources_1/new/single_pulse_output.v,1601430208,verilog,,C:/Users/marku/Documents/EE2026/Lab/Lab4/Lab4.srcs/sim_1/new/single_pulse_output_sim.v,,single_pulse_output,,,,,,,,

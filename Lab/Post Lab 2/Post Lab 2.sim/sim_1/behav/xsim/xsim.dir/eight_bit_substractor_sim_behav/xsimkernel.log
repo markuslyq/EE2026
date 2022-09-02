@@ -1,0 +1,7 @@
+Running: xsim.dir/eight_bit_substractor_sim_behav/xsimk.exe -simmode gui -wdb eight_bit_substractor_sim_behav.wdb -simrunnum 0 -socket 62653
+Design successfully loaded
+Design Loading Memory Usage: 5696 KB (Peak: 5696 KB)
+Design Loading CPU Usage: 93 ms
+Simulation completed
+Simulation Memory Usage: 6288 KB (Peak: 6288 KB)
+Simulation CPU Usage: 124 ms

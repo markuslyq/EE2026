@@ -1,0 +1,13 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Users/marku/Documents/Vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 63aab46d097745b499043b8c39918d10 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot Matriculation_Number_Display_Simulation_behav xil_defaultlib.Matriculation_Number_Display_Simulation xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Matriculation_Number_Display
+Compiling module xil_defaultlib.Matriculation_Number_Display_Sim...
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Matriculation_Number_Display_Simulation_behav

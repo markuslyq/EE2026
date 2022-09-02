@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Post_Lab_4.srcs/sources_1/new/main_clock_divider.v" \
+"../../../../Post_Lab_4.srcs/sources_1/new/my_dff.v" \
+"../../../../Post_Lab_4.srcs/sources_1/new/single_pulse_output.v" \
+"../../../../Post_Lab_4.srcs/sources_1/new/sub_task_A_clock.v" \
+"../../../../Post_Lab_4.srcs/sources_1/new/sub_task_B_clock.v" \
+"../../../../Post_Lab_4.srcs/sources_1/new/main.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

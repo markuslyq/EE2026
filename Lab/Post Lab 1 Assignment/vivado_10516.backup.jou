@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Aug 30 14:26:49 2020
+# Process ID: 10516
+# Current directory: C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10736 C:\Users\marku\Documents\EE2026\Post Lab 1 Assignment\Post Lab 1 Assignment.xpr
+# Log file: C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/vivado.log
+# Journal file: C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/Post Lab 1 Assignment.xpr}
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/Post Lab 1 Assignment.runs/impl_1/Matriculation_Number_Display.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/Post Lab 1 Assignment.runs/impl_1/Matriculation_Number_Display.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+archive_project {C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment.xpr.zip} -temp_dir {C:/Users/marku/Documents/EE2026/Post Lab 1 Assignment/.Xil/Vivado-10516-DESKTOP-JBI4V78} -force -include_local_ip_cache -include_config_settings
+close_hw

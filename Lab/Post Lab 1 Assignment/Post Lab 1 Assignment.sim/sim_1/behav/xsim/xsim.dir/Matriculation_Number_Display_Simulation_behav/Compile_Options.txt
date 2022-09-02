@@ -1,0 +1,1 @@
+-wto "63aab46d097745b499043b8c39918d10" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "Matriculation_Number_Display_Simulation_behav" "xil_defaultlib.Matriculation_Number_Display_Simulation" "xil_defaultlib.glbl" -log "elaborate.log" 
